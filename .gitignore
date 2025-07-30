@@ -1,0 +1,11 @@
+# Common C/C++ executables
+*.out
+*.obj
+*.o
+*.a
+*.so
+*.dll
+*.dSYM/
+*.elf
+*.bin
+
