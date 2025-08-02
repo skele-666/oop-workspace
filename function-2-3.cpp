@@ -21,5 +21,5 @@ void two_five_nine(int array[], int n) {
         }
     }
 
-    std::cout << "2:" << two << "; 5:" << five << "; 9:" << nine << ";\n";
+    std::cout << "2:" << two << ";5:" << five << ";9:" << nine << ";\n";
 }
