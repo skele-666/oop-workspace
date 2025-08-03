@@ -12,7 +12,7 @@ int main() {
     int result2 = count_evens(21);
     cout << "Expected output: 10\nActual output:   " << result2 << endl;
 
-    // Test 3: Count evens from 1 to 0 (edge case)
+    // Test 3: Empty (0)
     int result3 = count_evens(0);
     cout << "Expected output: 0\nActual output:   " << result3 << endl;
 

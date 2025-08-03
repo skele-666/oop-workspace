@@ -4,11 +4,11 @@ using namespace std;
 extern double array_mean(int array[], int n);
 
 int main() {
-    // Test 1: Normal case with positive integers
+    // Test 1: Normal array
     int nums[] = {1, 3, 5, 7, 9, 4};
     cout << "Expected output: 4.83333\nActual output:   " << array_mean(nums, 6) << endl;
 
-    // Test 2: 0 elements
+    // Test 2: Empty array
     int nums2[] = {};
     cout << "Expected output: 0\nActual output:   " << array_mean(nums2, 0) << endl;
 

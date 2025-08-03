@@ -4,12 +4,12 @@ using namespace std;
 extern int min_element(int array[], int n);
 
 int main() {
-    // Test 1: Array of positive integers
+    // Test 1: Array of positive numbers
     int array1[] = {1, 3, 5, 6, 7};
     int result1 = min_element(array1, 5);
     cout << "Expected output: 1\nActual output:   " << result1 << endl;
 
-    // Test 2: Array of negative integers
+    // Test 2: Array of negative numbers
     int array2[] = {-1, -5, -89, -4};
     int result2 = min_element(array2, 4);
     cout << "Expected output: -89\nActual output:   " << result2 << endl;
