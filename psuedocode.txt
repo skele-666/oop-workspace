@@ -9,4 +9,5 @@ FUNCTION transform(n):
     
     binary.REVERSE();
     RETURN binary;
+    // Could also make it a string and then add each "number" and convert it at the end?
 END
