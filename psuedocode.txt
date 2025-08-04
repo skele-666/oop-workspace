@@ -1,0 +1,12 @@
+FUNCTION transform(n):
+    binary = [];
+
+    while n > 0:
+        quotient = n // 2;
+        remainder = n - (quotient * 2);
+        binary.APPEND(remainder);
+        n = quotient;
+    
+    binary.REVERSE();
+    RETURN binary;
+END
