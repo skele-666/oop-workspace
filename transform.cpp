@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-std::string transform(int n) {
+string transform(int n) {
     if (n < 1) {
         return "0";
     }
