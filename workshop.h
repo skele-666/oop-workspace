@@ -1,7 +1,7 @@
 #include <iostream>
 
 void changeValue(double* ptr) {
-	*ptr = 45.56;
+	*ptr = 42.0;
 }
 
 void printArray(double* arr, int n) {
