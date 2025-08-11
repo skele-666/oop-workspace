@@ -1,5 +1,7 @@
 # Workshop Makefile
 
+all: workshop
+
 workshop: main.o
 	g++ -o workshop main.o
 
@@ -8,3 +10,6 @@ main.o: main.cpp workshop.h
 
 run:
 	./workshop
+
+clean:
+	rm -f workshop main.o
