@@ -17,28 +17,30 @@ int main() {
 	cout << "Max value in array: " << arrayMax(arr2, 5) << endl;
 
 	// Part 5
-	int N = 5;
-	double* arr3 = dynamicArray(N);
+	int n = 5;
+	double* arr3 = dynamicArray(n);
 
-	printArray(arr3, N);
+	printArray(arr3, n);
 	delete[] arr3;
 
 	// Part 6
-	double* arr4 = dynamicArray(9);
-	cout << "Max value in array: " << arrayMax(arr4, 9) << endl;
+	int n2 = 9;
+	double* arr4 = dynamicArray(n2);
+	cout << "Max value in array: " << arrayMax(arr4, n2) << endl;
 	delete[] arr4;
 
 	// Part 7
-	int N2 = 7;
-	double* arr5 = dynamicArray(N2);
+	int n3 = 7;
+	double* arr5 = dynamicArray(n3);
 
-	printArray(arr5, N2);
+	printArray(arr5, n3);
 	delete[] arr5;
 
 	// Part 8
-	double* arr6 = dynamicArray(6);
-	printArray(arr6, 6);
-	cout << "Max value in array: " << arrayMax(arr6, 9) << endl;
+	int n4 = 6;
+	double* arr6 = dynamicArray(n4);
+	printArray(arr6, n4);
+	cout << "Max value in array: " << arrayMax(arr6, 6) << endl;
 	delete[] arr6;
 
 	return 0;
