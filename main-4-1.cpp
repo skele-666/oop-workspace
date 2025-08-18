@@ -13,5 +13,6 @@ int main() {
     std::cout << "The second smallest sum is: " << secondSmallest << std::endl;
 
     delete[] numbers;
+    numbers = nullptr;
     return 0;
 }
