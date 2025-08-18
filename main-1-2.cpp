@@ -1,10 +1,10 @@
 #include <iostream>
 
 extern int *readNumbers();
-extern void printNumbers(int *numbers, int length);
+extern void hexDigits(int *numbers,int length);
 
 int main() {
-    // Test readNumbers() and printNumbers()
+    // Test hexDigits() with readNumbers()
     int *arr = readNumbers();
     int length = 10;
 
@@ -13,9 +13,8 @@ int main() {
         return 1;
     }
 
-    printNumbers(arr, length);
+    hexDigits(arr, length);
 
     delete[] arr;
     arr = nullptr;
-    return 0;
 }
