@@ -9,7 +9,6 @@ int main() {
     int length = 10;
 
     if (arr == nullptr) { // sad :(
-        std::cerr << "Error: could not allocate memory." << std::endl;
         return 1;
     }
 
