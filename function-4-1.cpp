@@ -10,7 +10,6 @@ int* readNumbers() {
     }
 
     for (int i = 0; i < 10; i++) {
-        std::cout << "Enter number " << i + 1 << ": ";
         std::cin >> arr[i];
     }
 

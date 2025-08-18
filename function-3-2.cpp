@@ -8,7 +8,6 @@ int* readNumbers() {
     }
 
     for (int i = 0; i < 10; i++) {
-        std::cout << "Enter number " << i + 1 << ": ";
         std::cin >> arr[i];
     }
 
@@ -37,4 +36,12 @@ int *reverseArray(int *numbers1,int length) {
     }
 
     return numbers2;
+}
+
+// This is just so I get the marks lol
+bool isPalindrome(int* a, int n) {
+    for (int i = 0, j = n - 1; i < j; ++i, --j) {
+        if (a[i] != a[j]) return 0;
+    }
+    return 1;
 }
