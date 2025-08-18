@@ -19,14 +19,15 @@ int* readNumbers() {
 int secondSmallestSum(int *numbers,int length) {
     std::vector<int> sums;
 
-    if (length < 1) {
+    // Length must be at least 2 so there can be a second smallest sum
+    if (length < 2) {
         return 0;
     }
 
     for (int i = 0; i < length; i++) {
         int sum = 0;
         for (int j = i; j < length; j++) {
-            sum += numbers[i];
+            sum += numbers[j];
             sums.push_back(sum);
         }
     }

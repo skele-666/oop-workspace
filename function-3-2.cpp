@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 int* readNumbers() {
     int* arr = new int[10];
@@ -39,9 +40,23 @@ int *reverseArray(int *numbers1,int length) {
 }
 
 // This is just so I get the marks lol
-bool isPalindrome(int* a, int n) {
-    for (int i = 0, j = n - 1; i < j; ++i, --j) {
-        if (a[i] != a[j]) return 0;
+bool isPalindrome(int* arr, int n) {
+    if (n < 1) {
+        return false;
     }
-    return 1;
+
+    int reversed[n];
+
+    // Reverse array
+    for (int i = 0; i < n; i++) {
+        reversed[i] = arr[n - 1 - i];
+    }
+
+    // Check if palindrome
+    for (int i = 0; i < n; i++) {
+        if (arr[i] != reversed[i]) {
+            return false;
+        }
+    }
+    return true;
 }
